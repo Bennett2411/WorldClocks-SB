@@ -1,7 +1,7 @@
 body {
   background-color: #ddfee4;
   font-family: sans-serif;
-  color: #132f2b;
+  color: #ddfee4;
 }
 
 h1 {
@@ -37,10 +37,10 @@ footer {
 .container {
   max-width: 600px;
   margin: 0 auto;
-  background-color: #28cc9e;
+  background-color: #196b69;
   border-radius: 10px;
   padding: 30px;
-  box-shadow: 10px 5px 5px #196b69;
+  box-shadow: 10px 5px 5px #132f2b;
   margin-top: 50px;
 }
 
@@ -49,7 +49,7 @@ footer {
   margin: 20px 0;
   justify-content: space-between;
   padding: 20px;
-  border-bottom: 1px dashed #196b69;
+  border-bottom: 1px dashed #ddfee4;
 }
 
 .date {
