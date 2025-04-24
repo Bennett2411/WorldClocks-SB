@@ -18,6 +18,16 @@ setInterval(function () {
   romeTimeElement.innerHTML = `${rometime.format(
     'h:mm:ss'
   )} <small>${rometime.format('A')}</small>`;
+
+  //Maldives
+  let maldivesElement = document.querySelector('#maldives');
+  let maldivesDateElement = maldivesElement.querySelector('.date');
+  let maldivesTimeElement = maldivesElement.querySelector('.time');
+  let maldivestime = moment().tz('Indian/Maldives');
+  maldivesDateElement.innerHTML = maldivestime.format('dddd D MMMM YYYY');
+  maldivesTimeElement.innerHTML = `${maldivestime.format(
+    'h:mm:ss'
+  )} <small>${maldivestime.format('A')}</small>`;
 }, 1000);
 
 function updateContent(event) {
