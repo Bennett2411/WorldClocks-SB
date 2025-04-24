@@ -15,31 +15,33 @@
         <h1>World Clock</h1>
       </header>
       <main>
-        <select name="" id="">
+        <select name="" id="citydropdown">
           <option value="">Select a city...</option>
-          <option value="">London</option>
-          <option value="">New York</option>
-          <option value="">Tokyo</option>
+          <option value="Europe/London">London</option>
+          <option value="America/New_York">New York</option>
+          <option value="Asia/Tokyo">Tokyo</option>
         </select>
 
-        <div class="cities" id="London">
-          <div class="city-date">
-            <h2>London 🕰️</h2>
+        <div id="containerContent">
+          <div class="cities" id="London">
+            <div class="city-date">
+              <h2>London 🕰️</h2>
 
-            <div class="date"></div>
+              <div class="date"></div>
+            </div>
+
+            <div class="time"></div>
           </div>
 
-          <div class="time"></div>
-        </div>
+          <div class="cities" id="Rome">
+            <div class="city-date">
+              <h2>Rome 🍝</h2>
 
-        <div class="cities" id="Rome">
-          <div class="city-date">
-            <h2>Rome 🍝</h2>
+              <div class="date"></div>
+            </div>
 
-            <div class="date"></div>
+            <div class="time"></div>
           </div>
-
-          <div class="time"></div>
         </div>
       </main>
     </div>

@@ -19,3 +19,24 @@ setInterval(function () {
     'h:mm:ss'
   )} <small>${rometime.format('A')}</small>`;
 }, 1000);
+
+function updateContent(event) {
+  let cityTimeZone = event.target.value;
+  let cityName = cityTimeZone.replace('_', ' ').split('/')[1];
+  let cityTime = moment().tz(cityTimeZone);
+  let containerContentElement = document.querySelector('#containerContent');
+  containerContentElement.innerHTML = `
+  <div class="cities">
+           <div class="city-date">
+              <h2>${cityName}</h2>
+              <div class="date">${cityTime.format('dddd D MMMM YYYY')}</div>
+            </div>
+
+            <div class="time">${cityTime.format(
+              'h:mm:ss'
+            )}<small>${cityTime.format('A')}</small>
+            </div>
+          </div>`;
+}
+let citydropdownSelect = document.querySelector('#citydropdown');
+citydropdownSelect.addEventListener('change', updateContent);
