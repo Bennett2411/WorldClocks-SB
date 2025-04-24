@@ -39,7 +39,8 @@ function updateContent(event) {
               'h:mm:ss'
             )}<small>${cityTime.format('A')}</small>
             </div>
-          </div>`;
+          </div>
+          <a href="/"> All Cities</a>`;
 }
 let citydropdownSelect = document.querySelector('#citydropdown');
 citydropdownSelect.addEventListener('change', updateContent);

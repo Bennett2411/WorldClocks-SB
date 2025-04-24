@@ -24,7 +24,15 @@ select {
 }
 
 a {
+  text-decoration: underline;
+  color: #ddfee4;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: underline;
   color: #132f2b;
+  font-weight: bold;
 }
 
 footer {
